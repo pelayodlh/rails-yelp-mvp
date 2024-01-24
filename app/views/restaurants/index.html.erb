@@ -1,0 +1,9 @@
+<div class="mx-3 my-3">
+<h1>Welcome to the new -and better- Yelp!</h1>
+
+<% @restaurants.each do |restaurant| %>
+<div><%= link_to restaurant.name, restaurant_path(restaurant.id) %></div>
+<% end %>
+<hr>
+<%= link_to "Want to add a new one?", new_restaurant_path %>
+</div>
