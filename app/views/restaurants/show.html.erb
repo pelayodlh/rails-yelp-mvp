@@ -6,6 +6,9 @@
 <h3>Reviews:</h3>
 <% @reviews.each do |review| %>
 <div><%= review.content%> <%= "/" %> <%= review.rating%><%="*"%></div>
-
 <% end %>
+
+<%= render "reviews/new" %>
+</div>
+
 </div>
